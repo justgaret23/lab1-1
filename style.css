@@ -1,0 +1,66 @@
+:root {
+    --wpi-color: #AC2B37; 
+    --light-green: #F79119;
+    --dark-green: #AB6009;
+    --light-cyan: #25F7CC;
+    --dark-cyan: #22AB8E;
+}
+
+header {
+    font-family: Futura, Trebuchet MS;
+    font-weight: bold condensed;
+    color: var(--wpi-color);
+    padding: 3px;
+    font-size: 25px;
+}
+
+#WPI {
+    /*center the image */
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main_nav ul { padding: 0; margin: 0; }
+
+#main_nav li  {
+  list-style-type: none; /* remove bullet points */ 
+}
+
+#main_nav li a {
+   display: block;
+   text-decoration: none; /* remove underline */
+   border-radius: 10px;  /* rounded corners */
+   margin: 6px;
+   padding: 9px;
+   color: #222;
+   font-weight: bold;
+
+   /* nice gradient shade on the buttons */
+   background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+
+   border: 1px solid var(--dark-cyan); /* dark outline */
+}
+
+nav li:active {
+    background-color: #ccc;
+    background-image: none;
+    box-shadow: inset 0 3px 3px rgba(0, 0, 0, .2);
+  }
+
+body {
+    background-color: var(--dark-cyan);
+}
+
+h1 {
+    font-family: 'Comic Sans MS';
+    color: var(--wpi-color);
+    padding: 3px;
+}
+
+p, footer {
+    font-family: 'Comic Sans MS';
+    color: var(--dark-green);
+    padding: 3px;
+}
